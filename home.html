@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Images</title>
+    <style>
+        body {
+            cursor: pointer; /* Change the cursor style */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Move the images down */
+            padding: 0 10px; /* Add padding for better appearance on small screens */
+        }
+
+        .image-container img {
+            margin-bottom: 20px; /* Add spacing between images */
+            width: 100%; /* Adjust the width of the images */
+            max-width: 500px; /* Limit the max width */
+            height: auto; /* Ensure images maintain their aspect ratio */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .image-container {
+                margin-top: 10px; /* Reduce top margin on smaller screens */
+            }
+
+            .image-container img {
+                max-width: 100%; /* Allow images to take full width of the container */
+            }
+        }
+
+        /* Media query for very small screens like mobile */
+        @media (max-width: 480px) {
+            .image-container {
+                padding: 0 5px; /* Further reduce padding on very small screens */
+            }
+
+            .image-container img {
+                margin-bottom: 15px; /* Reduce spacing between images */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="home.JPG" alt="Image 1">
+    <img src="menu1.PNG" alt="Image 2">
+    <img src="menu2.PNG" alt="Image 3">
+</div>
+
+</body>
+</html>
